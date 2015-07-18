@@ -2041,7 +2041,7 @@ $(document).ready(function(){
     
     "use strict";
 
-    $('#mailchimp').ajaxChimp({
+    $('#mailchimp,#mailchimp-2').ajaxChimp({
         callback: mailchimpCallback,
         url: "http://galeriecalderone.us3.list-manage.com/subscribe/post?u=ee26e0633eec85f75b2a6cae6&amp" //Replace this with your own mailchimp post URL. 
     });
