@@ -2045,7 +2045,10 @@ $(document).ready(function(){
         callback: mailchimpCallback,
         url: "http://galeriecalderone.us3.list-manage.com/subscribe/post?u=ee26e0633eec85f75b2a6cae6&amp" //Replace this with your own mailchimp post URL. 
     });
-
+ $('#mailchimp-2').ajaxChimp({
+        callback: mailchimpCallback,
+        url: "http://galeriecalderone.us3.list-manage.com/subscribe/post?u=ee26e0633eec85f75b2a6cae6&amp" //Replace this with your own mailchimp post URL. 
+    });
     function mailchimpCallback(resp) {
         if (resp.result === 'success') {
             $('#subscribe-result').hide().html('<div class="success">' + resp.msg + '</div>').slideDown().delay(10000).slideUp();
