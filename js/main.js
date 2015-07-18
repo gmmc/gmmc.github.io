@@ -1962,7 +1962,7 @@ function init_masonry(){
         });
         
     })(jQuery);
-};
+}
         
 /* ---------------------------------------------
  Contact form
