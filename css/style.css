@@ -2269,8 +2269,12 @@ a.logo:hover{
     
 	padding: 140px 0;
 }
+
 .small-section{
 	padding: 70px 0;
+}
+.small-padding{
+	padding: 20px 0;
 }
 .small-title{
     padding: 0;
