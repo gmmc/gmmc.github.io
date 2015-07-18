@@ -63,8 +63,8 @@ $(document).ready(function(){
     });
     
     //reset previously set border colors and hide all message on .keyup()
-    $("#contact_form").find("input","textearea").keyup(function(){
-        $("#contact_form").find("input","textearea").css('border-color', '');
+    $("#contact_form").find("input , textearea").keyup(function(){
+        $("#contact_form").find("input , textearea").css('border-color', '');
         $("#result").slideUp();
     });
     
