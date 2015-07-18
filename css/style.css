@@ -2333,6 +2333,9 @@ a.logo:hover{
 .bg-color-alfa{
 	color: #fff;
 }
+.bg-alfa-0{
+	opacity:0;
+}
 .bg-dark a,
 .bg-dark-lighter a,
 .bg-dark-alfa-30 a,
