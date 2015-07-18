@@ -2334,7 +2334,7 @@ a.logo:hover{
 	color: #fff;
 }
 .bg-alfa-0{
-	opacity:0;
+	background-color: rgb(255,255,255,0);
 }
 .bg-dark a,
 .bg-dark-lighter a,
