@@ -10,7 +10,7 @@
         
         // Page loader
         
-        $("body").imagesLoaded(function(){
+        $("Accueil").imagesLoaded(function(){
             $(".page-loader div").fadeOut();
         $(".page-loader").delay(200).fadeOut("slow");
         });
