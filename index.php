@@ -180,7 +180,7 @@
                             <div class="col-md-4">
                                 <blockquote>
                                     <p>
-                                    Une oeuvre d’art n’expose pas une vérité préétablie; elle incarne une vérité vécue.
+                                    <?php echo "hello word"; ?>Une oeuvre d’art n’expose pas une vérité préétablie; elle incarne une vérité vécue.
                                     </p>
                                     <footer>
                                         André Maurois
