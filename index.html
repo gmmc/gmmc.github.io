@@ -8,7 +8,6 @@
         <meta name="keywords" content="Galeries, Galerie d'art, Art, ART,Galerie,art,dinard,artistes,sculptures,peintures,photographies,Huiles sur toiles, aquarelles, bronze, Patrick Villas, Françoise de Felice, Christophe charbonnel, Malo, alexis Duhem, Béatrice Dalin Cé">
         <meta charset="utf-8">
         <meta name="author" content="Calderone">
-        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' http://maps.gstatic.com http://*.googleapis.com">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         
@@ -19,18 +18,25 @@
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
         
         <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-responsive.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">        
+         <link rel="stylesheet" href="css/main.css">          
 
-        
+      
+    <script type="text/javascript">
+			function loadScript() {
+			  var script = document.createElement('script');
+			  script.type = 'text/javascript';
+			  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+				  '&signed_in=true&callback=init_map';
+			 	 document.body.appendChild(script);
+			}
+			
+			window.onload = loadScript;    </script>
+   <script type="text/javascript" src="js/first.js"></script>
     </head>
     <body class="appear-animate">
-        <?php echo("hello")?>
+       <div class="hidden">
+
+</div> 
         <!-- Page Loader -->        
         <div class="page-loader">
             <div class="loader">Loading...</div>
@@ -41,9 +47,14 @@
         <div class="page" id="top">
             
             <!-- Accueil Section -->
-            <section class="home-section bg-gray parallax-2" data-background="images/accueil/plage-de-l-ecluse-dinard.jpg" id="Accueil">
+            <section class="home-section bg-gray parallax-2"  id="Accueil">
                 <div class="js-height-full">
-                    
+                    <script type="text/javascript">  
+					 $("#Accueil").imagesLoaded(function(){
+           				 $(".page-loader div").fadeOut();
+       				 $(".page-loader").delay(200).fadeOut("slow");
+       				 });
+       				 </script>
                     <!-- Hero Content -->
                     <div class="home-content container">
                         <div class="home-text">
@@ -1024,7 +1035,7 @@
 				                <i class="fa fa-map-marker"></i>
 				            </div>
 				            <div class="mt-text font-alt">
-				                <div class="mt-open">Ouvrire la carte <i class="fa fa-angle-down"></i></div>
+				                <div class="mt-open">Ouvrir la carte <i class="fa fa-angle-down"></i></div>
 				                <div class="mt-close">Férmer la carte <i class="fa fa-angle-up"></i></div>
 				            </div>
 				        </div>
@@ -1091,8 +1102,9 @@
         
         
         <!-- JS -->
-        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+               <script type="text/javascript" src="js/main.min.js"></script>
+              
+
         <noscript>Votre navigateur ne supporte pas Javascript</noscript>       
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
         

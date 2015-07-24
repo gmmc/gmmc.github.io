@@ -46,7 +46,7 @@
         init_team();
         initPageSliders();
         initWorkFilter();
-        init_map();
+      
         init_wow();
         init_masonry();
     });
@@ -1004,7 +1004,6 @@ function js_height_init(){
 /* ---------------------------------------------
  Google map
  --------------------------------------------- */
-
 var gmMapDiv = $("#map-canvas");
 
 function init_map(){
