@@ -38,7 +38,7 @@ Header set X-XSS-Protection "1; mode=block"
 # Only allow JavaScript from the same domain to be run.
 # Don't allow inline JavaScript to run.
 Header set X-Content-Security-Policy "allow 'self' *.google.com https://*.googleapis.com ;"
-
+Header set Content-Security-Policy "allow 'self' *.google.com https://*.googleapis.com ;"
 # Prevent mime based attacks
 Header set X-Content-Type-Options "nosniff"
 
