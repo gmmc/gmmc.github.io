@@ -51,95 +51,111 @@ textarea {
     padding: 0.2em 0;
 }
 
-
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(http://fonts.gstatic.com/s/dosis/v4/oaBFj7Fz9Y9_eW3k9Jd9X6CWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dosis Bold'), local('Dosis-Bold'), url(http://fonts.gstatic.com/s/dosis/v4/fP7ud4UTUWGxo-nV1joC1RkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-.page-loader{
- 	display:block;
+.page-loader{display:block;width:100%;height:100%;position:fixed;top:0;left:0;background:#fefefe;z-index:100000}.loader{width:50px;height:50px;position:absolute;top:50%;left:50%;margin:-25px 0 0 -25px;font-size:10px;text-indent:-12345px;border-top:1px solid rgba(0,0,0,.08);border-right:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08);border-left:1px solid rgba(0,0,0,.5);-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;-webkit-animation:spinner 700ms infinite linear;-moz-animation:spinner 700ms infinite linear;-ms-animation:spinner 700ms infinite linear;-o-animation:spinner 700ms infinite linear;animation:spinner 700ms infinite linear;z-index:100001}@-o-keyframes spinner{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spinner{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}
+
+.page{overflow: hidden;}
+
+
+.home-section{
+	width: 100%;
+	display: block;	
+	position: relative;
+    overflow: hidden;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center right;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image:url(../img/accueil/plage-de-l-ecluse-dinard.jpg);
+	height: 100vh;
+}
+
+.home-content{
+	display: table;
 	width: 100%;
 	height: 100%;
-	position: fixed;
+	text-align: center;
+	margin-top: 50px;
+}
+.bg-gray{
+	background-color: #f4f4f4;
+}
+.container .work-grid-3 .work-item{
+	width: 33.2%;
+}
+
+
+
+.font-alt{
+    font-family: Dosis, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.hs-line-8{
+    margin-top: 0;
+    position: relative;
+	font-size: 16px;
+	font-weight: 400;
+    letter-spacing: 0.3em;
+    line-height: 1.2;
+    opacity: .75;
+}
+.hs-line-11{
+    margin-top: 0;
+    position: relative;
+	font-size: 30px;
+    font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+    line-height: 1.8;
+    opacity: .9;
+}
+.mb-xs-30{margin-bottom: 30px;}
+.mb-50{margin-bottom: 50px}
+.mb-20{margin-bottom: 20px}
+.main-nav{
+	width: 100%;
+	height: 75px !important;
+	position: relative;
 	top: 0;
 	left: 0;
-	background: #fefefe;
-	z-index: 100000;	
+	text-align: left;
+	background: rgba(255,255,255, .97);
+	
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,.05);
+	box-shadow:  0 1px 0 rgba(0,0,0,.05);
+	
+	z-index: 1030;
+    
+    -webkit-transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
-
-.loader{
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -25px 0 0 -25px;
-  font-size: 10px;
-  text-indent: -12345px;
-  border-top: 1px solid rgba(0,0,0, 0.08);
-  border-right: 1px solid rgba(0,0,0, 0.08);
-  border-bottom: 1px solid rgba(0,0,0, 0.08);
-  border-left: 1px solid rgba(0,0,0, 0.5);
-  
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  
-   -webkit-animation: spinner 700ms infinite linear;
-   -moz-animation: spinner 700ms infinite linear;
-   -ms-animation: spinner 700ms infinite linear;
-   -o-animation: spinner 700ms infinite linear;
-   animation: spinner 700ms infinite linear;
-  
-  z-index: 100001;
-}
-@-o-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
